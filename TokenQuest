@@ -1,0 +1,21 @@
+# TokenQuest.py
+
+class TokenQuest:
+    def __init__(self, quest_name, quest_type, reward_tokens):
+        self.quest_name = quest_name
+        self.quest_type = quest_type
+        self.reward_tokens = reward_tokens
+    
+    def display_quest_info(self):
+        print(f"Quest Name: {self.quest_name}")
+        print(f"Quest Type: {self.quest_type}")
+        print(f"Reward Tokens: {self.reward_tokens}")
+
+# Example usage
+if __name__ == "__main__":
+    quest_name = "TokenQuest"
+    quest_type = "Exploration"
+    reward_tokens = ["TOKEN1", "TOKEN2", "TOKEN3"]
+    
+    token_quest = TokenQuest(quest_name, quest_type, reward_tokens)
+    token_quest.display_quest_info()
